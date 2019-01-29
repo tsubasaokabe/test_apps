@@ -12,9 +12,9 @@ def load_model():
     '''
 
     global model
-    print("学習済みモデルを読み込んでいます...")
+    print("")
     model = joblib.load("./model/sample-model.pkl")
-    print("ロードが完了しました")
+    print("")
 
 @app.route("/predict",methods=["POST"])
 def predict():
